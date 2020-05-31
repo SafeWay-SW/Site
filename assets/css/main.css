@@ -29,3 +29,66 @@ audio, img, iframe, video{
     font-size: .78rem;
     padding: .67rem 2rem;
 }
+/*Banner*/
+.banner{
+    background-image: url(../img/banner-topo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 60vh;
+}
+.banner .container{
+    padding: 4rem 0;
+}
+/*Menu*/
+.menu{
+    background-color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.menu .container_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 98%;
+}
+.menu .container_menu .logo{
+    width: 40%;
+}
+.menu .container_menu .logo > img{
+    width: 60%;
+}
+.menu .container_menu .links{
+    display: none;
+}
+.menu .container_menu .links > li{
+    display: block;
+    padding: .90rem;
+}
+.menu .container_menu .links > li a{
+    color: #222;
+    font-family: var(--roboto);
+    font-size: .89rem;
+    font-weight: 600;
+}
+/*********Last Desktop*/
+@media(min-width: 48em){
+    .menu .container_menu .logo > img{
+        width: 30%;
+    }
+    .menu .container_menu .links{display: block;}
+    .menu .container_menu .links > li{
+        display: inline;
+    }
+    .banner{
+        background-size: cover;
+        min-height: 100vh;
+    }
+    .banner .container{
+        padding: 14rem 0;
+    }
+    section .container{padding: 6rem 0;}
+}
