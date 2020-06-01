@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 /*Fonts*/
 :root{
     --roboto: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -31,7 +34,7 @@ audio, img, iframe, video{
 }
 /*Banner*/
 .banner{
-    background-image: url(../img/banner-topo.png);
+    background-image: url(../img/banner.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 60vh;
@@ -42,7 +45,7 @@ audio, img, iframe, video{
 /*Menu*/
 .menu{
     background-color: #fff;
-    padding: 20px 0;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -74,6 +77,85 @@ audio, img, iframe, video{
     font-size: .89rem;
     font-weight: 600;
 }
+/*Card*/
+.snip1559 {
+    font-family: 'Lato', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 310px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #2B2B2B;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .snip1559 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .snip1559 .profile-image {
+    padding: 15% 10% 0;
+  }
+  
+  .snip1559 .profile-image img {
+    max-width: 100%;
+    vertical-align: top;
+    position: relative;
+    border-radius: 50%;
+    max-width: 40%;
+  }
+  
+  .snip1559 figcaption {
+    padding: 5% 10% 15%;
+  }
+  
+  .snip1559 h3 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 3px 0;
+  }
+  
+  .snip1559 h5 {
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 1px;
+  }
+  
+  .snip1559 .icons i {
+    color: #999;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1.5em;
+  }
+  
+  .snip1559 .icons i:hover {
+    color: #555;
+  }
+  
+  .snip1559 .icons i a {
+    text-decoration: none;
+  }
+/*Icones*/
+.container_cards{
+    display: flex;
+    flex-direction: column;
+}  
+/*sections*/
+.dados_nasa{
+    background-color: #3F51B5;
+    color: #fff;
+}
 /*********Last Desktop*/
 @media(min-width: 48em){
     .menu .container_menu .logo > img{
@@ -84,11 +166,15 @@ audio, img, iframe, video{
         display: inline;
     }
     .banner{
-        background-size: cover;
+        background-position-x: 6px;
+        background-size: 100vw;
         min-height: 100vh;
     }
     .banner .container{
         padding: 14rem 0;
     }
     section .container{padding: 6rem 0;}
+    .icones{
+        width: 70%;
+    }
 }
